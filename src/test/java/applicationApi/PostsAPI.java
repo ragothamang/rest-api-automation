@@ -7,4 +7,8 @@ public class PostsAPI extends ApiBase {
     public static Response getAllPosts() {
         return get("/posts");
     }
+
+    public static Response getPostById(String id) {
+        return get("/posts/" + id);
+    }
 }
