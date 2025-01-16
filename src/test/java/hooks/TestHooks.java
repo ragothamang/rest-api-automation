@@ -7,6 +7,8 @@ public class TestHooks {
 
     @BeforeMethod
     public void beforeMethod() {
-        RestAssured.baseURI = "https://jsonplaceholder.typicode.com/";
+
+//        RestAssured.baseURI = "https://jsonplaceholder.typicode.com/";
+        RestAssured.baseURI = "https://dummyjson.com/";
     }
 }
