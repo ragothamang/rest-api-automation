@@ -65,6 +65,12 @@
             <version>5.5.0</version>
         </dependency>
 
+            <!-- Add ExtentReports dependency -->
+            <dependency>
+                <groupId>com.aventstack</groupId>
+                <artifactId>extentreports</artifactId>
+                <version>5.1.0</version>
+            </dependency>
 
     </dependencies>
 
