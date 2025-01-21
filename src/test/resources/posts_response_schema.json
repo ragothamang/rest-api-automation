@@ -1,0 +1,158 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1737086017.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "posts",
+    "total",
+    "skip",
+    "limit"
+  ],
+  "properties": {
+    "posts": {
+      "$id": "#root/posts",
+      "title": "Posts",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/posts/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "body",
+          "tags",
+          "reactions",
+          "views",
+          "userId"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#root/posts/items/id",
+            "title": "Id",
+            "type": "integer",
+            "examples": [
+              1
+            ],
+            "default": 0
+          },
+          "title": {
+            "$id": "#root/posts/items/title",
+            "title": "Title",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "His mother had always taught him"
+            ],
+            "pattern": "^.*$"
+          },
+          "body": {
+            "$id": "#root/posts/items/body",
+            "title": "Body",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind."
+            ],
+            "pattern": "^.*$"
+          },
+          "tags": {
+            "$id": "#root/posts/items/tags",
+            "title": "Tags",
+            "type": "array",
+            "default": [],
+            "items":{
+              "$id": "#root/posts/items/tags/items",
+              "title": "Items",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "history"
+              ],
+              "pattern": "^.*$"
+            }
+          },
+          "reactions": {
+            "$id": "#root/posts/items/reactions",
+            "title": "Reactions",
+            "type": "object",
+            "required": [
+              "likes",
+              "dislikes"
+            ],
+            "properties": {
+              "likes": {
+                "$id": "#root/posts/items/reactions/likes",
+                "title": "Likes",
+                "type": "integer",
+                "examples": [
+                  192
+                ],
+                "default": 0
+              },
+              "dislikes": {
+                "$id": "#root/posts/items/reactions/dislikes",
+                "title": "Dislikes",
+                "type": "integer",
+                "examples": [
+                  25
+                ],
+                "default": 0
+              }
+            }
+          }
+        ,
+          "views": {
+            "$id": "#root/posts/items/views",
+            "title": "Views",
+            "type": "integer",
+            "examples": [
+              305
+            ],
+            "default": 0
+          },
+          "userId": {
+            "$id": "#root/posts/items/userId",
+            "title": "Userid",
+            "type": "integer",
+            "examples": [
+              121
+            ],
+            "default": 0
+          }
+        }
+      }
+
+    },
+    "total": {
+      "$id": "#root/total",
+      "title": "Total",
+      "type": "integer",
+      "examples": [
+        251
+      ],
+      "default": 0
+    },
+    "skip": {
+      "$id": "#root/skip",
+      "title": "Skip",
+      "type": "integer",
+      "examples": [
+        0
+      ],
+      "default": 0
+    },
+    "limit": {
+      "$id": "#root/limit",
+      "title": "Limit",
+      "type": "integer",
+      "examples": [
+        30
+      ],
+      "default": 0
+    }
+  }
+}
